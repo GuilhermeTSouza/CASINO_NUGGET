@@ -1,0 +1,19 @@
+body {
+  
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: black; /* Fundo preto */
+  }
+
+  .container {
+    text-align: center;
+    display: flex;
+  }
+
+  .center-image {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+  }

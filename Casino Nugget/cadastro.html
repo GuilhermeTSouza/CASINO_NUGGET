@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="cadastro.css">
+<title>Formulário</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+
+    @media only screen and (max-width: 600px) {}
+    
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    
+        body {
+          background-color: #000000;
+          color: #fff;
+    
+        }
+    
+        .container {
+          text-align: center;
+          margin-top: 100px;
+        }
+    
+        .logo {
+          max-width: 200px;
+          margin-bottom: 20px;
+        }
+    
+        .navbar {
+          background-color: #d5d5d5;
+        }
+    
+        .navbar-brand {
+          color: black;
+        }
+    
+        .navbar-nav .nav-link {
+          color: black;
+        }
+    
+        .btn-primary {
+          background-color: #555;
+          border-color: #555;
+        }
+    
+        .btn-primary:hover {
+          background-color: #777;
+          border-color: #777;
+        }
+    
+        #meuIFrame {
+          display: block;
+          margin: 0 auto;
+          width: 320px;
+          height: 180px;
+        }
+    
+        #rotate-container {
+          display: inline-block;
+          transition: transform 6s;
+        }
+      </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"><img src="imagem/Logo.jpg" width="175" alt="" style="height: 100px; width: 100px;"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Início <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="fichas.html">Fichas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="jogos.html">Jogos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="cardapio.html">Cardápio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="duvidas.html">Dúvidas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="rolete.html">Roleta</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login.html">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="cadastro.html">Cadastro</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <h1>CADASTRO</h1>
+    <form class="info-form">
+      <div class="grid-container">
+        <div class="grid-item">
+          <label for="nome">NOME:</label>
+          <input type="text" id="nome" name="nome" required>
+        </div>
+        <div class="grid-item">
+          <label for="data-nascimento">DATA DE NASCIMENTO:</label>
+          <input type="date" id="data-nascimento" name="data-nascimento" required>
+        </div>
+        <div class="grid-item">
+          <label for="telefone">TELEFONE:</label>
+          <input type="tel" id="telefone" name="telefone" required>
+        </div>
+        <div class="grid-item">
+          <label for="sexo">SEXO:</label>
+          <select id="sexo" name="sexo">
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+            <option value="outro">Outro</option>
+          </select>
+        </div>
+        <div class="grid-item">
+          <label for="endereco">ENDEREÇO:</label>
+          <input type="text" id="endereco" name="endereco" required>
+        </div>
+        <div class="grid-item">
+          <label for="cidade">CIDADE:</label>
+          <input type="text" id="cidade" name="cidade" required>
+        </div>
+        <div class="grid-item">
+          <label for="estado">ESTADO:</label>
+          <input type="text" id="estado" name="estado" required>
+        </div>
+        <div class="grid-item">
+          <label for="profissao">PROFISSÃO:</label>
+          <input type="text" id="profissao" name="profissao" required>
+        </div>
+        <div class="grid-item">
+          <label for="cpf">CPF:</label>
+          <input type="text" id="cpf" name="cpf" required>
+        </div>
+        <div class="grid-item">
+          <label for="email">E-MAIL:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="grid-item">
+          <label for="senha">SENHA:</label>
+          <input type="password" id="senha" name="senha" required>
+        </div>
+      </div>
+      <br>
+      
+        <a href="CADASTRADO.html" class="button">CADASTRAR</a>
+      
+    </form>
+  </div>
+</body>
+</html>
